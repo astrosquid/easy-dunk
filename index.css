@@ -1,0 +1,59 @@
+:root {
+  --text-color: black;
+  --body-bg: #EAE8E4;
+  --card-bg: #dddad4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  background-color: var(--body-bg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-spacer {
+  align-self: flex-start;
+  width: 20%;
+}
+
+.lesson-card {
+  min-height: 25%;
+  max-height: 75%;
+  min-width: 30%;
+  max-width: 50%;
+
+  padding: .5em 1em .5em 1em;
+
+  background-color: var(--card-bg);
+}
+
+.controls {
+  background-color: var(--card-bg);
+  align-self: flex-end;
+  margin-bottom: 2em;
+  margin-left: 4em;
+}
+
+.control-btn {
+  display: inline-block;
+}
+
+a.control-btn {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a.control-btn:visited {
+  color: var(--text-color);
+}
+
+a.btn-forw {
+  margin-left: 1em;
+}
